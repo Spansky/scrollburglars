@@ -17,8 +17,28 @@ h2 {
   position: relative;
   font-size: 2rem;
   font-weight: bold;
+  height: 75px;
   margin-bottom: 16px;
   margin-top: 48px;
+}
+
+h2::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: red;
+}
+
+/* now obsolete */
+.heading-decoration {
+  position: absolute;
+  top: -25px;
+  right: 0px;
+  width: 75px;
+  height: 75px;
+  background: papayawhip;
+  opacity: 1;
+  transform: translateX(12px) skew(-24deg);
 }
 
 main {
@@ -144,17 +164,6 @@ a {
   .social-icons {
     display: none;
   }
-}
-
-.heading-decoration {
-  position: absolute;
-  top: -25px;
-  right: 0px;
-  width: 75px;
-  height: 75px;
-  background: papayawhip;
-  opacity: 1;
-  transform: translateX(12px) skew(-24deg);
 }
 
 .heading-content {
